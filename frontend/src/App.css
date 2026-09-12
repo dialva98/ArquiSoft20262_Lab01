@@ -1,0 +1,582 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f5f4;
+  color: #202020;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #f4f5f4;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 25px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: #00843d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.brand p {
+  margin: 3px 0 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+/* MAIN */
+
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 25px 50px;
+}
+
+/* WELCOME */
+
+.welcome-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.welcome-section h2 {
+  margin: 0 0 7px;
+  font-size: 24px;
+  color: #222222;
+}
+
+.welcome-section p {
+  margin: 0;
+  color: #777777;
+  font-size: 14px;
+}
+
+/* BUTTON */
+
+.primary-button {
+  border: none;
+  background-color: #00843d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.primary-button:hover {
+  background-color: #006f33;
+}
+
+/* TRANSFER */
+
+.transfer-section {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+/* CUSTOMERS */
+
+.customers-section {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 22px 25px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #222222;
+}
+
+.section-header p {
+  margin: 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+.account-count {
+  background-color: #e9f6ee;
+  color: #00843d;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* CUSTOMER LIST */
+
+.customer-list {
+  width: 100%;
+}
+
+.customer-card {
+  padding: 20px 25px;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.customer-card:last-child {
+  border-bottom: none;
+}
+
+.customer-card:hover {
+  background-color: #fafafa;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.customer-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #e9f6ee;
+  color: #00843d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.customer-name {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.customer-account {
+  margin: 0;
+  color: #777777;
+  font-size: 13px;
+}
+
+.customer-balance {
+  text-align: right;
+}
+
+.balance-label {
+  display: block;
+  color: #888888;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.balance-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00843d;
+}
+
+/* FORMULARIO DE TRANSFERENCIA */
+
+.transfer-section h2 {
+  margin-top: 0;
+  color: #222222;
+}
+
+.transfer-section label {
+  display: block;
+  margin-bottom: 6px;
+  color: #444444;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.transfer-section input,
+.transfer-section select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #222222;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.transfer-section input:focus,
+.transfer-section select:focus {
+  outline: none;
+  border-color: #00843d;
+  box-shadow: 0 0 0 2px rgba(0, 132, 61, 0.1);
+}
+
+/* MENSAJES */
+
+.error-message {
+  color: #b42318;
+  background-color: #fef3f2;
+  border: 1px solid #fecdca;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #027a48;
+  background-color: #ecfdf3;
+  border: 1px solid #abefc6;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  color: #888888;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .main-container {
+    padding: 20px 15px 40px;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+
+  .section-header {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .customer-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .customer-balance {
+    text-align: left;
+    padding-left: 60px;
+  }
+}
+
+/* HISTORIAL DE TRANSACCIONES */
+
+.transaction-history {
+  width: 100%;
+}
+
+.history-list {
+  width: 100%;
+}
+
+.transaction-card {
+  min-height: 90px;
+  margin: 0 18px;
+  padding: 20px 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.transaction-card:last-child {
+  border-bottom: none;
+}
+
+.transaction-card:hover {
+  background-color: #fafcfb;
+}
+
+.transaction-icon {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #e9f6ee;
+  color: #00843d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.transaction-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.transaction-accounts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #222222;
+  font-size: 14px;
+}
+
+.transaction-arrow {
+  color: #00843d;
+  font-weight: bold;
+}
+
+.transaction-numbers {
+  margin-top: 7px;
+
+  display: flex;
+  gap: 8px;
+
+  color: #888888;
+  font-size: 12px;
+}
+
+.transaction-numbers span {
+  color: #aaaaaa;
+}
+
+.transaction-amount {
+  min-width: 130px;
+
+  text-align: right;
+}
+
+.transaction-amount span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #888888;
+
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.transaction-amount strong {
+  color: #00843d;
+
+  font-size: 17px;
+}
+
+.history-message {
+  padding: 40px 20px;
+
+  margin: 0;
+
+  text-align: center;
+
+  color: #777777;
+  font-size: 14px;
+}
+
+.history-error {
+  margin: 20px;
+  padding: 12px;
+
+  border-radius: 6px;
+
+  background-color: #fef3f2;
+  border: 1px solid #fecdca;
+
+  color: #b42318;
+
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .transaction-card {
+    margin: 0;
+    padding: 18px;
+
+    align-items: flex-start;
+  }
+
+  .transaction-accounts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .transaction-arrow {
+    display: none;
+  }
+
+  .transaction-amount {
+    min-width: 90px;
+  }
+}
+
+/* BOTONES DE ACCIÓN */
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BOTÓN PRINCIPAL */
+
+.primary-button {
+  border: none;
+  background-color: #00843d;
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+          background-color 0.2s ease,
+          transform 0.1s ease;
+}
+
+.primary-button:hover {
+  background-color: #006f33;
+}
+
+.primary-button:active {
+  transform: scale(0.98);
+}
+
+/* BOTÓN SECUNDARIO */
+
+.secondary-button {
+  border: 1px solid #00843d;
+
+  background-color: white;
+  color: #00843d;
+
+  padding: 11px 19px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+          background-color 0.2s ease,
+          color 0.2s ease;
+}
+
+.secondary-button:hover {
+  background-color: #e9f6ee;
+}
+
+/* BOTÓN ACTIVO */
+
+.secondary-button.active {
+  background-color: #00843d;
+  color: white;
+}
+
+/* HISTORIAL */
+
+.history-section {
+  margin-bottom: 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .action-buttons {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+}
