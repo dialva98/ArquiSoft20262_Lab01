@@ -1,4 +1,16 @@
-# ArquiSoft20262_Lab01
+[![CI](https://github.com/dialva98/ArquiSoft20262_Lab01/actions/workflows/ci.yml/badge.svg)](https://github.com/dialva98/ArquiSoft20262_Lab01/actions/workflows/ci.yml)
+
+[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=dialva98_ArquiSoft20262_Lab01&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=dialva98_ArquiSoft20262_Lab01)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=dialva98_ArquiSoft20262_Lab01&metric=coverage)](https://sonarcloud.io/summary/new_code?id=dialva98_ArquiSoft20262_Lab01)
+
+[![Reliability issues](https://sonarcloud.io/api/project_badges/measure?project=dialva98_ArquiSoft20262_Lab01&metric=software_quality_reliability_issues)](https://sonarcloud.io/summary/new_code?id=dialva98_ArquiSoft20262_Lab01)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dialva98_ArquiSoft20262_Lab01&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=dialva98_ArquiSoft20262_Lab01)
+
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-highlight.svg)](https://sonarcloud.io/summary/new_code?id=dialva98_ArquiSoft20262_Lab01)
+
+# ArquiSoft20262_Lab02
 
 Aplicación bancaria desarrollada con **Spring Boot** y **React**, que permite gestionar clientes, consultar cuentas, realizar transferencias y consultar el historial de transacciones.
 
@@ -32,11 +44,9 @@ El frontend está desarrollado en React y consume la API REST proporcionada por 
 - Frontend durante desarrollo: `http://localhost:5173`
 - Frontend compilado: integrado en `src/main/resources/static`
 
-### Configuración para pruebas
+### Persistencia
 
-Para realizar las pruebas, es necesario contar con una base de datos **MySQL local** y cargar previamente algunos clientes/cuentas de prueba.
-
-También se debe ajustar en `src/main/resources/application.properties` el **usuario, contraseña y parámetros de conexión** correspondientes a la configuración local de MySQL.
+Como mejora introducida durante el segundo ejercicio práctico del curso, se realizó la migración de la base de datos local a una base de datos alojada en un servidor en la nube, específicamente en Neon, un servicio basado en PostgreSQL.
 
 ### Funcionalidades
 
