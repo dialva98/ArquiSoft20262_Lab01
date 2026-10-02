@@ -34,7 +34,7 @@ function TransferForm({ customers, onTransferComplete }) {
 
         try {
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}/api/transactions`,
+                `/api/transactions`,
                 {
                     method: "POST",
                     headers: {

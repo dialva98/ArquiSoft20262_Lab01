@@ -44,7 +44,7 @@ function CreateAccountForm({ onCustomerCreated }) {
 
         try {
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}/api/customers`,
+                `/api/customers`,
                 {
                     method: "POST",
                     headers: {

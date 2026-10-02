@@ -15,7 +15,7 @@ function App() {
     const loadCustomers = async () => {
         try {
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}/api/customers`
+                `/api/customers`
             );
 
             if (!response.ok) {
