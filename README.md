@@ -61,5 +61,5 @@ Como mejora introducida durante el segundo ejercicio práctico del curso, se rea
 
 **Diego Vásquez**
 
-**Universidad de Antioquia - Curso de Arquitectura de Software - Laboratorio 1**
+**Universidad de Antioquia - Curso de Arquitectura de Software - Laboratorio 2**
 
