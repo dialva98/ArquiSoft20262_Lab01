@@ -4,7 +4,6 @@
 
 package com.udea.banco2025.controller;
 import com.udea.banco2025.DTO.CustomerDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.udea.banco2025.service.CustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,8 +13,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/customers")
 public class CustomerController {
-    @Autowired
-    private CustomerService customerService;
+    private final CustomerService customerService;
+    public CustomerController(CustomerService customerService) {
+        this.customerService = customerService;
+    }
+
 
     //obtener todos los clientes
     @GetMapping

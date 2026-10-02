@@ -7,7 +7,6 @@ import com.udea.banco2025.DTO.CustomerDTO;
 import com.udea.banco2025.entity.Customer;
 import com.udea.banco2025.mapper.CustomerMapper;
 import com.udea.banco2025.repository.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -15,9 +14,8 @@ import java.util.List;
 public class CustomerService {
     private final CustomerRepository customerRepository;
     private final CustomerMapper customerMapper;
-    @Autowired
-    public CustomerService(CustomerRepository customerRepository, CustomerMapper
-            customerMapper) {
+
+    public CustomerService(CustomerRepository customerRepository, CustomerMapper customerMapper) {
         this.customerRepository = customerRepository;
         this.customerMapper = customerMapper;
     }
