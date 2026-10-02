@@ -1,4 +1,4 @@
-[![CI](https://github.com/dialva98/ArquiSoft20262_Lab01/actions/workflows/ci.yml/badge.svg)](https://github.com/dialva98/ArquiSoft20262_Lab01/actions/workflows/ci.yml)
+[![CI](https://github.com/dialva98/ArquiSoft20262_Lab01/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/dialva98/ArquiSoft20262_Lab01/actions/workflows/ci.yml)
 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=dialva98_ArquiSoft20262_Lab01&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=dialva98_ArquiSoft20262_Lab01)
 
