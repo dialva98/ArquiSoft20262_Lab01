@@ -24,7 +24,7 @@ function TransactionHistory({ customers }) {
                 const responses = await Promise.all(
                     customers.map((customer) =>
                         fetch(
-                            `http://localhost:8080/api/transactions/${customer.accountNumber}`
+                            `${import.meta.env.VITE_API_URL}/api/transactions/${customer.accountNumber}`
                         )
                     )
                 );
