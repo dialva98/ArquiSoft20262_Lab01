@@ -1,0 +1,35 @@
+#workflow CI
+name: CI
+
+#triggers definidos por las acciones de push (dos ramos master y feature/ci-cd) y pull (en rama master)
+on:
+  push:
+    branches:
+      - master
+      - feature/ci-cd
+  pull_request:
+    branches:
+      - master
+
+#definición de las acciones a realizar
+jobs:
+  test:
+    name: Build and Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Grant execute permission to Maven Wrapper
+        run: chmod +x mvnw
+
+      - name: Run unit tests
+        run: ./mvnw test
