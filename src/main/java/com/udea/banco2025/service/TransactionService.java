@@ -8,7 +8,7 @@ import com.udea.banco2025.entity.Customer;
 import com.udea.banco2025.entity.Transaction;
 import com.udea.banco2025.repository.CustomerRepository;
 import com.udea.banco2025.repository.TransactionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,10 +16,15 @@ import java.time.LocalDateTime;
 
 @Service
 public class TransactionService {
-    @Autowired
-    private TransactionRepository transactionRepository;
-    @Autowired
-    private CustomerRepository customerRepository;
+    private final TransactionRepository transactionRepository;
+    private final CustomerRepository customerRepository;
+
+    public TransactionService(
+            TransactionRepository transactionRepository,
+            CustomerRepository customerRepository) {
+        this.transactionRepository = transactionRepository;
+        this.customerRepository = customerRepository;
+    }
 
     public TransactionDTO transferMoney(TransactionDTO transactionDTO) {
     //validar que los numeros de cuenta no sean nulos

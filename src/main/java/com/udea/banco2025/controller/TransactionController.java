@@ -5,7 +5,6 @@
 package com.udea.banco2025.controller;
 import com.udea.banco2025.DTO.TransactionDTO;
 import com.udea.banco2025.service.TransactionService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -14,8 +13,10 @@ import java.util.List;
 @RequestMapping(value="/api/transactions", produces = "application/json")
 public class TransactionController {
 
-    @Autowired
-    private TransactionService transactionService;
+    private final TransactionService transactionService;
+    public TransactionController(TransactionService transactionService) {
+        this.transactionService = transactionService;
+    }
 
 
     //STATUS CODES
