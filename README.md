@@ -12,7 +12,7 @@
 
 # ArquiSoft20262_Lab02
 
-Aplicación bancaria desarrollada con **Spring Boot** y **React**, que permite gestionar clientes, consultar cuentas, realizar transferencias y consultar el historial de transacciones.
+Aplicación bancaria desarrollada con **Spring Boot** y **React**, que permite gestionar clientes, consultar cuentas, realizar transferencias y consultar el historial de transacciones. Acceso: https://bancoudea-nww2.onrender.com 
 
 ### Tecnologías
 
